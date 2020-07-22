@@ -1,19 +1,19 @@
+const numberOfFilms = +prompt('How many movies have you watched?', '');
 
-// const result = confirm("Tu te?");
-// console.log(result);
+let personalMovieDb = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
 
-// const answer = prompt(" 18? ", "");
-// console.log(typeof(answer));
+const latestFilm1 = prompt('What film have you watched?', ''),
+      latestScore1 = prompt('What would you score it?', ''),
+      latestFilm2 = prompt('What film have you watched?', ''),
+      latestScore2 = prompt('What would you score it?', '');
 
-const answers = [];
+personalMovieDb.movies[latestFilm1] = latestScore1;
+personalMovieDb.movies[latestFilm2] = latestScore2;
 
-// answers[0] = prompt ('was?','');
-// answers[1] = prompt ('wo?','');
-// answers[2] = prompt ('warum?','');
-
-
-console.log(typeof(answers));
-
-const user = 'Ivan';
-
-alert(`hello, ${user}`);
+console.log(personalMovieDb);
